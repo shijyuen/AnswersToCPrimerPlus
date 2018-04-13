@@ -6,18 +6,25 @@
 > c. 本章出现次数最多的字母  
 > d. 本章出现次数最多的字母次数  
 
-a.`int`, `short` 或`unsigned` 或 `unsigned short`都行，看人口数了。`int`, possibly `short` or `unsigned` or `unsigned short`.
+a.`int`, `short` 或 `unsigned short`都行，看人口数。
+>* `int`, possibly `short` or `unsigned short`.
 
-b.`float`就行,精度要求不高。You could use `double` but don't really need the extra precision.
+b.`float`就行,精度要求不高。
+>* You could use `double` but don't really need the extra precision.
 
 c.`char`没话说。
 
-d.`int`，节省空间可以用`unsigned`。`int`, possibly `unsigned`.
+d.`int`，节省空间可以用`unsigned`。
+>* `int`, possibly `unsigned`.
+> `unsigned`是“无符号”的意思，默认是`signed`“有符号”的。两者存储方式相同，前者省去了表示符号的bit，所以能表示的范围更大
+> `short`范围是-32768~32767，而`unsigned short`范围是0~65535。int, char同理。
+>  不能 `unsigned int = -1`
 
 
 ### 2.在什么情况下要用`long`类型的变量代替`int`类型的变量？
 
-数字超出了`int`取值范围，且在`long`取值范围内时，使用`long`。Becasue `long` may accommodate larger numbers than int on the system.
+数字超出了`int`取值范围，且在`long`取值范围内时，使用`long`。
+>* Becasue `long` may accommodate larger numbers than int on the system.
 
 ### 3.使用哪些可移植的数据类型可以获得32位有符号整数？选择的理由是什么？
 
@@ -135,7 +142,7 @@ void main(int)  / this program is perfect /
 }
 ```
 
-醉了，还“this program is perfect”...
+“this program is perfect”这个笑话逗了我10分钟...
 让我来告诉你什么是完美的程序：
 ```c
 int main()  /* let me show you what program is perfect */
