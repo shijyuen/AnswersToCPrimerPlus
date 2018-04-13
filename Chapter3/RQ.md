@@ -21,9 +21,9 @@ d.`int`，节省空间可以用`unsigned`。`int`, possibly `unsigned`.
 
 ### 3.使用哪些可移植的数据类型可以获得32位有符号整数？选择的理由是什么？
 
->* 如果需要正好获得32位的整数，选择`int32_t`类型  
->* 如果要保证至少可以储存32位整数的最小类型，选择`int32_least_t`类型  
->* 如果要为32位整数提供最快的计算速度，选择`int32_fast_t`类型
+* 如果需要正好获得32位的整数，选择`int32_t`类型  
+* 如果要保证至少可以储存32位整数的最小类型，选择`int32_least_t`类型  
+* 如果要为32位整数提供最快的计算速度，选择`int32_fast_t`类型
 
 >* To get exactly 32 bits, you could use `int32_t`. 
 >* To get the smallest type that could store at least 32 bits, use `int_least32_t`.
@@ -44,7 +44,7 @@ b. `int`类型，整型常量
 c. `double`类型，双精度浮点型常量
 
 d. `unsigned int`类型，整型常量，用16进制表示
->* 为毛不是`int`？应该可以的，书里说优先`unsigned int`。
+>* 为毛不是`int`？可以的，书里说优先`unsigned int`。
 
 e. `double`，双精度浮点型常量，用指数形式表示
 
