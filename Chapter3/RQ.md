@@ -19,7 +19,7 @@ d.`int`，节省空间可以用`unsigned`。`int`, possibly `unsigned`.
 
 数字超出了`int`取值范围，且在`long`取值范围内时，使用`long`。Becasue `long` may accommodate larger numbers than int on the system.
 
-### 使用哪些可移植的数据类型可以获得32位有符号整数？选择的理由是什么？
+### 3.使用哪些可移植的数据类型可以获得32位有符号整数？选择的理由是什么？
 
 如果需要正好获得32位的整数，选择`int32_t`类型  
 如果要保证至少可以储存32位整数的最小类型，选择`int32_least_t`类型  
@@ -32,7 +32,7 @@ To get the smallest type that could store at least 32 bits, use `int_least32_t`.
 To get the type that would provide the fastest computations for 32 bits, choose `int_fast32_t`.
 
 
-### 指出下列常量的类型和含义（如果有的话）
+### 4.指出下列常量的类型和含义（如果有的话）
 > a. '\b'  
 > b. 1066  
 > c. 99.44  
@@ -50,7 +50,7 @@ d. `unsigned int`类型，整型常量，用16进制表示
 
 e. `double`，双精度浮点型常量，用指数形式表示
 
-### Dottie Cawm编写了一个程序，请找出程序中的错误。
+### 5.Dottie Cawm编写了一个程序，请找出程序中的错误。
 ```c
 include <stdio.h>
 main
@@ -79,7 +79,7 @@ int main(void)
 ```
 **还有啊...没有给`rate`变量赋值，没有使用`h`变量。虽然能通过编译...不过真的是蛋疼...**
 
-### 写出下列常量在声明中使用的数据类型和在`printf()`中对应的转换说明：
+### 6.写出下列常量在声明中使用的数据类型和在`printf()`中对应的转换说明：
 常量 | 类型 | 转换说明（%转换字符）
 :----|:----|:----
 12|int|%d
@@ -92,7 +92,7 @@ int main(void)
 6.0f|float|%f
 0x5.b6p12|float|%a
 
-### 写出下列常量在声明中使用的数据类型和在`printf()`中对应的转换说明（假设`int`为16位）
+### 7.写出下列常量在声明中使用的数据类型和在`printf()`中对应的转换说明（假设`int`为16位）
 常量 | 类型 | 转换说明（%转换字符）
 :---|:-----|:-------------------
 012|unsigned int|%#o
@@ -104,7 +104,7 @@ int main(void)
 0x44|unsigned int|%#x
 -40|int|%d
 
-### 假设程序的开头有下列声明：
+### 8.假设程序的开头有下列声明：
 ```c
 int imate = 2;
 long shot = 53456;
@@ -117,7 +117,7 @@ printf("The odds against the %d were %ld to 1.\n", imate, shot);
 printf("A score of %f is not an %c grade.\n", log, grade);
 ```
 
-### 假设`ch`是`char`类型的变量。分别使用转义序列、十进制值、八进制字符常量和十六进制字符常量把回车字符赋给`ch`（假设使用ASCII编码值）。
+### 9.假设`ch`是`char`类型的变量。分别使用转义序列、十进制值、八进制字符常量和十六进制字符常量把回车字符赋给`ch`（假设使用ASCII编码值）。
 ```c
 ch = '\r';
 ch = 13;
@@ -125,7 +125,7 @@ ch = '\015';
 ch = '\xd'
 ```
 
-### 修正下面的程序（在C中，/表示除以）。
+### 10.修正下面的程序（在C中，/表示除以）。
 ```c
 void main(int)  / this program is perfect /
 {
@@ -151,7 +151,7 @@ int main()  /* let me show you what is perfect XD */
 }
 ```
 
-### 指出下列转义序列的含义：
+### 11.指出下列转义序列的含义：
 > a. \n  
 > b. \\\  
 > c. \"  
