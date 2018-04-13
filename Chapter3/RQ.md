@@ -16,9 +16,9 @@ c.`char`没话说。
 
 d.`int`，节省空间可以用`unsigned`。
 >* `int`, possibly `unsigned`.
-> `unsigned`是“无符号”的意思，默认是`signed`“有符号”的。两者存储方式相同，前者省去了表示符号的bit，所以能表示的范围更大
-> `short`范围是-32768~32767，而`unsigned short`范围是0~65535。int, char同理。
->  不能 `unsigned int = -1`
+>* `unsigned`是“无符号”的意思，默认是`signed`“有符号”的。两者存储方式相同，前者省去了表示符号的那一个bit，所以能表示的范围更大
+>* `short`范围是-32768-32767，而`unsigned short`范围是0-65535。int, char同理。
+>*  不能 `unsigned int = -1`
 
 
 ### 2.在什么情况下要用`long`类型的变量代替`int`类型的变量？
