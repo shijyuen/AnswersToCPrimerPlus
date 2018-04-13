@@ -7,7 +7,7 @@
 
 **此项目包括以下内容：**
 * 各章节Review Questions和Programming Exercise参考答案
-* 应试防坑指北.md
+* 细节指北.md
 * 更新日志.md
 * README.md
 
