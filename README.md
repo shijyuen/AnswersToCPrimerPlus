@@ -1,5 +1,5 @@
 # C Primer Plus 6th
-=====
+
 **此项目包括以下内容：**
 >* 各章节Review Questions和Programming Exercise参考答案
 >* 应试防坑指北.md
