@@ -21,15 +21,13 @@ d.`int`，节省空间可以用`unsigned`。`int`, possibly `unsigned`.
 
 ### 3.使用哪些可移植的数据类型可以获得32位有符号整数？选择的理由是什么？
 
-如果需要正好获得32位的整数，选择`int32_t`类型  
-如果要保证至少可以储存32位整数的最小类型，选择`int32_least_t`类型  
-如果要为32位整数提供最快的计算速度，选择`int32_fast_t`类型
+>* 如果需要正好获得32位的整数，选择`int32_t`类型  
+>* 如果要保证至少可以储存32位整数的最小类型，选择`int32_least_t`类型  
+>* 如果要为32位整数提供最快的计算速度，选择`int32_fast_t`类型
 
-To get exactly 32 bits, you could use `int32_t`. 
-
-To get the smallest type that could store at least 32 bits, use `int_least32_t`.
-
-To get the type that would provide the fastest computations for 32 bits, choose `int_fast32_t`.
+>* To get exactly 32 bits, you could use `int32_t`. 
+>* To get the smallest type that could store at least 32 bits, use `int_least32_t`.
+>* To get the type that would provide the fastest computations for 32 bits, choose `int_fast32_t`.
 
 
 ### 4.指出下列常量的类型和含义（如果有的话）
@@ -77,7 +75,7 @@ int main(void)
     return 0;
 }
 ```
-**还有啊...没有给`rate`变量赋值，没有使用`h`变量。虽然能通过编译...不过真的是蛋疼...**
+*还有啊...没有给`rate`变量赋值，没有使用`h`变量。虽然能通过编译...不过真的是蛋疼...*
 
 ### 6.写出下列常量在声明中使用的数据类型和在`printf()`中对应的转换说明：
 常量 | 类型 | 转换说明（%转换字符）
@@ -138,8 +136,9 @@ void main(int)  / this program is perfect /
 ```
 
 醉了，还“this program is perfect”...
+让我来告诉你什么是完美的程序：
 ```c
-int main()  /* let me show you what is perfect XD */
+int main()  /* let me show you what program is perfect */
 {
     int cows, legs;
     printf("How many cow legs did you count?\n")
@@ -157,5 +156,8 @@ int main()  /* let me show you what is perfect XD */
 > c. \"  
 > d. \t  
 
-`\n`为换行符，`\\`为反斜杠字符（\）本身，`\"`为双引号字符（"），`\t`为制表符
+* `\n`为换行符
+* `\\`为反斜杠字符（\）本身
+* `\"`为双引号字符（"）
+* `\t`为制表符
 
