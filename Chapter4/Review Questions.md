@@ -9,8 +9,8 @@
 
 > Hi! What's your first name?  
 **shij yuan**  (错误的输入内容)  
-Muyuan, what's your weight in pounds?  （这里都不让输入浮点了...）  
-Well, Muyuan, your volume is -12345670.00(**这里是乱码，"yuan"被转换成了浮点显示出来**) cubic feet.  
+Muyuan, what's your weight in pounds?  （这里都不让输入浮点了...)  
+Well, shij, your volume is -12345670.00(**这里是乱码，"yuan"被转换成了浮点显示出来**) cubic feet.  
 Also, your first name has 6 letters,   
 and we have 40 bytes to store it.
 
@@ -118,6 +118,7 @@ printf("This copy of \"%s\" sells for $%.2f.\nThat is %.0f%% of list.\n",
 
 a. 一个字段宽度与位数相同的十进制整数：`%d`
 > "字段宽度与位数相同的"这个定语好像没什么卵用...  
+
 b. 一个形如`8A`、字段宽度为4的十六进制整数:`%4X`或`%4x` 
 c. 一个形如`232.346`、字段宽度为10的浮点数：`%10.3f`  
 d. 一个形如`2.33e+002`、字段宽度为12的浮点数：`%12.2e`  
@@ -136,9 +137,11 @@ e. 一个字段宽度为8的字符串的前8个字符：`%8.8s`
 a.  一个字段宽度为6、最少有4位数字的十进制整数：`%6.4d`  
 b. 一个在参数列表中给定字段宽度的八进制整数：`%*o`  
 > `*`是占位符，后面可以用其他内容替换。  
+
 c. 一个字段宽度为2的字符：`%2c` 
 d. 一个形如`+3.13`、字段宽度等于数字中字符数的浮点数：`%+.2f`  
 > 又是一个奇怪的定语...
+
 e. 一个字段宽度为7、左对齐字符串中的前5个字符：`%-7.5s`
 
 ### 9.分别写出读取下列各输入行的`scanf()`语句，并声明语句中用到的变量和数组
