@@ -188,7 +188,7 @@ e. catch 22 （但是跳过catch）
   printf("The double type is %z bytes..\n", sizeof(double));
 ```
 
-`%z`的z是个修饰符，不是正确的转换字符。应该改为`%zd`或`%zo`或`%zx`。
+`%z`的z只是个修饰符，不是正确的转换字符。应该改为`%zd`或`%zo`或`%zx`。
 
 ### 12.假设要在程序中用圆括号代替花括号，以下方法是否可行？
 
@@ -197,3 +197,5 @@ e. catch 22 （但是跳过catch）
   #define ) }  
 ```
 NO WAY.等着一万个error把。
+> 例如`main()`会变成`main{}`
+
