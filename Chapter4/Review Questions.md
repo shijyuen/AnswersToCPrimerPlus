@@ -8,8 +8,8 @@
 > 错误结果：
 
 > Hi! What's your first name?  
-**shij yuan**  (错误的输入内容)  
-shij, what's your weight in pounds?  （这里都不让输入了...被直接跳过)  
+**shij yuan**  (错误的输入内容)  
+shij, what's your weight in pounds?  （这里都不让输入了...被直接跳过)  
 Well, shij, your volume is -12345670.00(**这里是乱码，"yuan"被转换成了浮点显示出来**) cubic feet.  
 Also, your first name has 4 letters,   
 and we have 40 bytes to store it.
