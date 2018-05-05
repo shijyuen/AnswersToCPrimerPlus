@@ -4,19 +4,19 @@
 int main(void){
     float driven_distance;
     float gas;
-    float pint_per_hundred_km;
+    float gallon_per_hundred_km;
     float mile_per_gallon;
     
-    printf("How much distance have you traveled in kilometer:\n");
+    printf("enter distance you have traveled in kilometer:\n");
     scanf("%f", &driven_distance);
 
-    printf("How much gas have you used in pint:\n");
+    printf("enter gas you have used in gallon:\n");
     scanf("%f", &gas);
 
-    pint_per_hundred_km = gas / driven_distance * 100;
-    mile_per_gallon = (driven_distance / KM_PER_MILE) / (gas / PINT_PER_GALLON);
+    gallon_per_hundred_km = gas / driven_distance * 100;
+    mile_per_gallon = (driven_distance / KM_PER_MILE) / (gas / GALLON_PER_GALLON);
 
-    printf("Fuel consumptions:%f pint/100km or %f mile/gallon.\n", pint_per_hundred_km, mile_per_gallon);
+    printf("%f gallon/100km or %f mile/gallon.\n", pint_per_hundred_km, mile_per_gallon);
     
     return 0; 
 }
