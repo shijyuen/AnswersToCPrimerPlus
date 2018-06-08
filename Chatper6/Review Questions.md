@@ -36,7 +36,8 @@ for (value = 36; value > 0; value /= 2)
 
 a. `x > 5`  
 b. `scanf("%lf", &x) != 1`   
-> 失败不一定返回0，但是一定不返回1  
+> 失败不一定返回0，但是一定不返回1
+
 c. `x == 5`  
 
 ### 4.用代码表示以下测试条件：
@@ -395,15 +396,15 @@ int main(void)
 	return 0;
 }
 ```
-1. Hi!
-k = 1
-k is 1 in the loop
-Now k is 3
-k = 3
-k is 3 in the loop
-Now k is 5
-k = 5
-k is 5 in the loop
-Now k is 7
-k = 7
+1:Hi!  
+k = 1  
+k is 1 in the loop  
+Now k is 3  
+k = 3  
+k is 3 in the loop  
+Now k is 5  
+k = 5  
+k is 5 in the loop  
+Now k is 7  
+k = 7    
 
