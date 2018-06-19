@@ -6,7 +6,7 @@ int main(void){
 	scanf("%d %d", &lower, &upper);
 	num = lower;
 	while(upper > lower){
-		for(num = lower; num <= upper; num++){
+		for(num = lower, sum = 0; num <= upper; num++){
 			sum += num * num;
 		}
 		printf("The sums of the squares from %d to %d is %d\n", lower * lower, upper * upper, sum);
